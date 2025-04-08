@@ -1,0 +1,8 @@
+# 📚 Household Education Cost Analysis - Somalia (IBS Data)
+
+## 🔍 Project Overview  
+Analysis of education expenses using **Somali Integrated Budget Survey (IBS)** data.  
+- **Tools**: Stata, Excel  
+- **Key Variables**: `education_expenditure`, `region`, `household_income`  
+- **Objective**: Measure disparities in education spending across Somali regions.  
+
