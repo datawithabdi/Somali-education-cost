@@ -1,0 +1,42 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\user\Desktop\somali_educ_cost\Untitled.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 8 Apr 2025, 20:31:44
+
+{com}. keep region_n ea_type_n qsn2_18c qsn2_18a qsn2_18f qsn2_18e qsn2_18b qsn2_18d qsn2_18g qsn2_18i qsn2_18h qsn2_18j qsn2_18k
+
+. rename (region_n ea_type_n qsn2_18a qsn2_18c qsn2_18f qsn2_18e qsn2_18b qsn2_18d qsn2_18g qsn2_18i qsn2_18h qsn2_18j qsn2_18k)(region location tution book examination material boarding uniform transportation construction tutoring others total)
+{res}
+{com}. drop if missing( region ,location, tution ,book ,examination, material, boarding, uniform, transportation ,construction ,tutoring ,others, total)
+{txt}(36,800 observations deleted)
+
+{com}. sum
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 6}region {c |}{res}     10,823    9.472789    5.009174          1         17
+{txt}{space 4}location {c |}{res}     10,823    1.788044    .4910747          1          3
+{txt}{space 6}tution {c |}{res}     10,823    69.58296    168.9819        -99       5400
+{txt}{space 8}book {c |}{res}     10,823    .8812815    73.11678        -99       4500
+{txt}{space 1}examination {c |}{res}     10,823    1.653131    67.19037        -99       5000
+{txt}{hline 13}{c +}{hline 57}
+{space 4}material {c |}{res}     10,823    5.416073    35.95718        -99       2000
+{txt}{space 4}boarding {c |}{res}     10,823   -.4407881    19.80914        -99        200
+{txt}{space 5}uniform {c |}{res}     10,823    2.986502    34.52262        -99       1700
+{txt}transporta~n {c |}{res}     10,823    .6850873    24.58679        -99        540
+{txt}construction {c |}{res}     10,823   -1.790363    15.54617        -99        270
+{txt}{hline 13}{c +}{hline 57}
+{space 4}tutoring {c |}{res}     10,823   -.9408094    15.43805        -99        360
+{txt}{space 6}others {c |}{res}     10,823    -.491421    19.36309        -99        891
+{txt}{space 7}total {c |}{res}     10,823    105.6784    258.8594          0      12400
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\user\Desktop\somali_educ_cost\Untitled.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 8 Apr 2025, 20:39:23
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
